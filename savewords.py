@@ -5,7 +5,7 @@ f = open('words.txt','a+')#a+模式是为了避免第一次单词文件不存在
 f.seek(0)
 lines = f.readlines()
 words = [line.split('      ')[0] for line in lines if lines.strip()]
-#六个空格字符作为单词和时间的分割。wods是一个列表。
+#六个空格字符作为单词和时间的分割。words是一个列表。
 #strip()方法是为了去除字符串前后多余的空白字符
 
 while True:
